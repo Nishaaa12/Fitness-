@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+		 <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700%7CPT+Serif:400,700,400italic' rel='stylesheet'>
+		  <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet"> 
+<style>
+h2{
+font-family: 'Open Sans', sans-serif;
+font-size:12px;
+padding-top:15px;
+padding-left:40%;
+}
+.banner{
+height:300px;
+width:100%;
+background-image:url('fittag.jpg');
+}
+.footer{
+width:100%;
+height:8%;
+background-color:#D32701;
+color:black;
+position:absolute;
+bottom:-5 50px;
+}
+.container{
+font-family: 'Open Sans', sans-serif;
+height:800px;
+}
+.page-header{
+padding:10px;
+border-bottom:1px solid orange;
+color:orange;
+font-size:25px;
+margin-bottom:25px;
+}
+.frm{
+width:100%;
+}
+.frm label{
+color:orange;
+display:block;
+margin-bottom:15px;
+}
+.frm input[type="text"],.frm input[type="password"]{
+height:30px;
+display:block;
+font-family:15px;
+margin-bottom:15px;
+width:300px;
+}
+
+.frm input[type="submit"]{
+height:45px;
+with:100px;
+background:orange;
+color:white;
+padding:10px;
+border:none;
+line-height:30px;
+display:block;
+}
+fieldset{
+padding:20px;
+color:orange;
+font-size:15px;
+width:50%;
+margin-left:50px;
+}
+legend{
+font-size:20px;
+font-weight:bold;
+}
+#picture{
+
+}
+</style>
+
+</head>
+<body style="background-color:black">
+
+		<div class="menu">
+			
+			<div class="leftmenu">
+				<h4> FITNESS+ </h4>
+			</div>
+
+			<div class="rightmenu">
+				<ul>
+					<li id="firstlist"><a href="index.html"> HOME </a></li>
+					<li><a href="aboutus.html"> About Us </a></li>
+					<li> <a href="services.html">Services </a></li>
+					<li><a href="gallery.html"> Gallery</a></li>
+					<li><a href="login.html">  login</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</div>
+			</div>
+			<div class="banner">
+			</div>
+			<div class="container">
+			<h3 class="page-header">Welcome to FITNESS+</h3>
+			<fieldset>
+			<legend>New User Registration</legend>
+			<form action="user.php" method="post">
+			<div class="frm">
+			<label>Name</label>
+			<input type="text" name="name" required>
+			<label>Email</label>
+			<input type="text" name="email" required>
+			<label>Password</label>
+			<input type="password" name="pass" required>
+			<label>Confirm Password</label>
+			<input type="password" name="conpass" required>
+			<label>Gender</label>
+			<select>
+			<option value="">Select Gender</option>
+			<option value="Male">Male</option>
+			<option value="Female">Female</option>
+			<option value="Others">Others</option>
+			</select>
+			<label>Contact Number</label>
+			<input type="text" name="number" required>
+			<input type="submit" value="Register"><br>
+			<a href="login.html">Already User</a>
+			</div>
+			</form>
+			</fieldset>
+			<div class="footer">
+<h2>&copy; Copyright 2019 FITNESS+, All Rights Reserved</h2>
+</div>
+</body>
+</html>
